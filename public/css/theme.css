@@ -1,155 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* styles.css */
+
+/* Navigation Bar */
+.navbar {
+  background-color: #f8f9fa; /* Light gray background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle outline */
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 3px solid blanchedalmond;
-    text-align: left;
-    padding: 8px;
-  }
-  th{
-    background-color: rgb(141, 133, 196);
-  }
-  tr:nth-child(odd) {
-    background-color: lightgray;
-  }
+/* Navigation "Brand" */
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif; /* Replace with your desired Google Font */
+  color: #007bff; /* New text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for a subtle effect */
+}
 
+/* Navigation "Link" */
+.nav-link {
+  font-family: 'Roboto', sans-serif; /* Replace with your desired Google Font */
+  color: #343a40; /* Default text color */
+}
 
-  
-.nav1{
-  background-image: linear-gradient(to right, rgb(131, 146, 105),rgb(33, 36, 33));
-  height: 85px;
-  box-shadow: 1px 2px 3px 1px rgb(97, 72, 51) outset !important;
+.nav-link:hover {
+  color: #007bff; /* Hover text color */
 }
-.nav{
-  font-family: 'Open Sans',serif;
-  color: rgb(38, 36, 73);
-  text-shadow: 1.25px 1.25px;
-  font-size: 30px !important;
+
+/* App Background */
+body, html {
+  background: linear-gradient(to right, #4e54c8, #8f94fb); /* Gradient background */
+  background-size: cover; /* Cover the entire page */
 }
-a{
-  color: azure !important;
+
+/* "Primary" Button */
+.btn-primary {
+  background-color: #007bff; /* Primary button background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle outline */
 }
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Different color on hover */
+}
+
+/* Table cells inside "odd" numbered table rows */
+table tr:nth-child(odd) td {
+  background-color: #f8f9fa; /* Light gray background color */
+  background-image: linear-gradient(to right, #f8f9fa, #ffffff); /* Gradient background */
+}
+
+/* All Heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Replace with your desired Google Font */
+  color: #007bff; /* New text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for a subtle effect */
+}
+
+/* All Anchor elements (HTML Links) */
+a {
+  color: #007bff; /* Default text color */
+}
+
 a:hover {
-  color: rgb(194, 194, 194) !important;
-}
-html,body{
-  background-image: linear-gradient(to right,cornsilk,transparent) !important;
-  background-color: rgb(29, 53, 68);
-} 
-.abc{
-  background-color: lightgray !important;
-}  
-
-
-h1,h2,h3,h4,h5,h6{
-  color: darkblue;
-  text-shadow: 1px 1px; 
+  color: #0056b3; /* Hover text color */
 }
 
-.spacer{
-    margin-top: 25px;
+/* Fieldset "Legends" */
+legend {
+  padding-top: 10px; /* Padding top for space */
+  padding-bottom: 10px; /* Padding bottom for space */
+  font-family: 'Roboto', sans-serif; /* Replace with your desired Google Font */
+  color: #343a40; /* New text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for a subtle effect */
 }
-
-.container {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  .container header {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: 500;
-    text-align: center;
-  }
-  .container .form {
-    margin-top: 30px;
-  }
-  .form .input-box {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .input-box label {
-    color: #333;
-  }
-  .form :where(.input-box input, .select-box) {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    color: #707070;
-    margin-top: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-  }
-  .input-box input:focus {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  }
-  .form .column {
-    display: flex;
-    column-gap: 15px;
-  }
-  .form .job-box {
-    margin-top: 20px;
-  }
-  .job-box h3 {
-    color: #333;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 8px;
-  }
-  .form :where(.job-option, .status) {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    flex-wrap: wrap;
-  }
-  .form .status {
-    column-gap: 5px;
-  }
-  .status input {
-    accent-color: rgb(130, 106, 251);
-  }
-  .form :where(.status input, .status label) {
-    cursor: pointer;
-  }
-  .status label {
-    color: #707070;
-  }
-  .address :where(input, .select-box) {
-    margin-top: 15px;
-  }
-  .select-box select {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    color: #707070;
-    font-size: 1rem;
-  }
-  .form button {
-    height: 55px;
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 30px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: rgb(130, 106, 251);
-  }
-  .form button:hover {
-    background: rgb(88, 56, 250);
-  }
